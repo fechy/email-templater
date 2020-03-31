@@ -1,0 +1,109 @@
+body {
+  background: #F5F5DC;
+}
+
+.floating-toolbar {
+  position: absolute;
+  width: 120px;
+  height: 35px;
+  padding: 2px;
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+  border: 1px solid #eee;
+  text-align: right;
+  -webkit-box-shadow: 1px 1px 5px 0 rgba(199, 199, 199, 1);
+  -moz-box-shadow: 1px 1px 5px 0 rgba(199, 199, 199, 1);
+  box-shadow: 1px 1px 5px 0 rgba(199, 199, 199, 1);
+
+  .button-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-right: 10px;
+  }
+
+  &:hover {
+    left: 0;
+  }
+
+  &__top {
+    top: 15px;
+  }
+
+  &__bottom {
+    bottom: 15px;
+  }
+
+  &__open {
+    left: -85px;
+  }
+
+  &__closed {
+    left: -130px;
+  }
+}
+
+.dimension-drawer {
+  position: absolute;
+  height: 40px;
+  padding: 2px;
+  transition: all .5s ease-in-out;
+  text-align: right;
+  bottom: 80px;
+
+  &__open {
+    left: 0;
+  }
+
+  &__closed {
+    left: -500px;
+  }
+}
+
+.content {
+  padding: 10px;
+}
+
+.viewer {
+  @import "reset";
+
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 1px 1px 5px 0 rgba(199, 199, 199, 1);
+  -moz-box-shadow: 1px 1px 5px 0 rgba(199, 199, 199, 1);
+  box-shadow: 1px 1px 5px 0 rgba(199, 199, 199, 1);
+  transition: width .2s ease-in-out;
+
+  &__dim_full {
+    width: 100%;
+  }
+
+  &__dim_480 {
+    width: 480px;
+  }
+
+  &__dim_320 {
+    width: 320px;
+  }
+
+  &__dim_375 {
+    width: 375px;
+  }
+
+  &__dim_425 {
+    width: 425px;
+  }
+
+  &__dim_768 {
+    width: 768px;
+  }
+
+  &__dim_1024 {
+    width: 1024px;
+  }
+
+  &__dim_1440 {
+    width: 1440px;
+  }
+}
